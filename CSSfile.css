@@ -1,0 +1,132 @@
+html{
+    background-color: #004d4d;
+}
+
+header{
+    color: white;
+    height:5em;
+    padding:.5em;
+    font-size: 2em;
+}
+
+/*Nav Bar*/
+.navbar{
+    background-color: #8B4513;
+    color: white;
+    margin: 0 -2em 0 -2em;
+    top: 0;
+    position: sticky;
+}
+#navlist{
+    list-style: none;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+#navlist a{
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+#navlist a:hover{
+    font-weight: bold;
+}
+
+main{
+    margin:3em 10em 1em 10em;
+    text-align: center;
+    color:white;
+    font-size: 1.25em;
+}
+
+footer{
+    background-color: #8B4513;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 1em;
+    margin: 1em -2em 0 -2em;
+    position: relative;
+}
+
+/*index*/
+.overview{
+    background-color: teal;
+    border-style: double;
+    border-color: #8B4513 rgb(56, 27, 6);
+    border-width: 2em;
+}
+#overviewPara{
+    margin: 0 5em 0 5em;
+    padding: 1em;
+}
+.images{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/*Proposal*/
+#highConcept, #genre, #platform, #story, #esthetics, #gameplay, #about{
+    background-color: teal;
+    border-style: double;
+    border-color: #8B4513 rgb(56, 27, 6);
+    border-width: 2em;
+    padding: 1em;
+    margin: 2em 0 2em 0;
+}
+
+#gameplay{
+    padding: 0 5em 0 5em;
+}
+#list{
+    list-style-type: none;
+}
+
+/*Project*/
+#temp{
+    background-color: teal;
+    border-style: double;
+    border-color: #8B4513 rgb(56, 27, 6);
+    border-width: 2em;
+    padding: 1em;
+    margin: 2em 0 2em 0;
+}
+
+/*Documentation*/
+#process,#status, #sources{
+    background-color: teal;
+    border-style: double;
+    border-color: #8B4513 rgb(56, 27, 6);
+    border-width: 2em;
+    padding: 1em;
+    margin: 2em 0 2em 0;
+}
+#sources ul{
+    padding: 2em;
+    list-style-type: none;
+}
+
+/*Links*/
+a:link{
+    color:#d2d4c8;
+}
+a:visited{
+    color:#d2d4c8;
+}
+a:focus{
+    font-weight: bold;
+}
+a:hover{
+    font-weight: bold;
+}
+a:active{
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
