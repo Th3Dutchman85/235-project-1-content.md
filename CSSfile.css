@@ -1,3 +1,4 @@
+/*Generic Items*/
 html{
     background-color: #004d4d;
 }
@@ -7,6 +8,29 @@ header{
     height:5em;
     padding:.5em;
     font-size: 2em;
+}
+
+main{
+    margin:3em 10em 1em 10em;
+    text-align: center;
+    color:white;
+    font-size: 1.5em;
+}
+
+footer{
+    background-color: #8B4513;
+    color: white;
+    text-align: left;
+    font-size: 1.2em;
+    margin: 1em -1em 0 -1em;
+    position: relative;
+}
+.foot{
+    display: flex;
+    justify-content: space-around;
+}
+#logo{
+    margin-top:1em;
 }
 
 /*Nav Bar*/
@@ -35,23 +59,6 @@ header{
     font-weight: bold;
 }
 
-main{
-    margin:3em 10em 1em 10em;
-    text-align: center;
-    color:white;
-    font-size: 1.25em;
-}
-
-footer{
-    background-color: #8B4513;
-    color: white;
-    text-align: center;
-    font-size: 1.2em;
-    padding: 1em;
-    margin: 1em -2em 0 -2em;
-    position: relative;
-}
-
 /*index*/
 .overview{
     background-color: teal;
@@ -60,8 +67,7 @@ footer{
     border-width: 2em;
 }
 #overviewPara{
-    margin: 0 5em 0 5em;
-    padding: 1em;
+    padding: 0em 1em 1em 1em;
 }
 .images{
     margin-top: 2em;
@@ -76,15 +82,8 @@ footer{
     border-style: double;
     border-color: #8B4513 rgb(56, 27, 6);
     border-width: 2em;
-    padding: 1em;
+    padding: 0em 1em 1em 1em;
     margin: 2em 0 2em 0;
-}
-
-#gameplay{
-    padding: 0 5em 0 5em;
-}
-#list{
-    list-style-type: none;
 }
 
 /*Project*/
@@ -93,7 +92,7 @@ footer{
     border-style: double;
     border-color: #8B4513 rgb(56, 27, 6);
     border-width: 2em;
-    padding: 1em;
+    padding: 0em 1em 1em 1em;
     margin: 2em 0 2em 0;
 }
 
@@ -106,17 +105,16 @@ footer{
     padding: 1em;
     margin: 2em 0 2em 0;
 }
-#sources ul{
-    padding: 2em;
-    list-style-type: none;
+#sources {
+    padding: 0em 1em 1em 1em;
 }
 
 /*Links*/
 a:link{
-    color:#d2d4c8;
+    color:white;
 }
 a:visited{
-    color:#d2d4c8;
+    color:white;
 }
 a:focus{
     font-weight: bold;
@@ -129,4 +127,32 @@ a:active{
 }
 a{
     text-decoration: none;
+    font-size: .85em;
+}
+
+/*For when the screen is real small*/
+@media screen and (max-width: 850px)
+{
+    main{
+        margin: 3em 0em 1em 0em;
+        text-align: left;
+        color:white;
+        font-size: 1.5em;
+    }
+    footer{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .images{
+        width:100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #screenshot1, #screenshot2, #screenshot3{
+        width: auto;
+    }
+    #overviewPara{
+        margin: 0;
+        padding: 1em;
+    }
 }
